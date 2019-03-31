@@ -1,0 +1,239 @@
+/*css初始化*/
+html,body,ul,li,ol,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";/*宋体unicode*/
+	color: #666;
+	background: #f5f5f5;
+}
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset,img,input,button {
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline-style: none;
+}
+ul,ol {
+	list-style: none;
+}
+input {
+	padding-top: 0;
+	padding-bottom: 0;
+	font-family: "SimSun","宋体";
+}
+/*去掉行内替换元素空白缝隙*/
+select,input {
+	vertical-align: middle;
+}
+img {
+	border: 0;
+	vertical-align: middle;
+}
+select,input,textarea {
+	font-size: 12px;
+	margin: 0;
+}
+/*防止拖动 影响布局*/
+textarea {
+	resize: none;
+}
+/*给clearfix元素添加两个块级子元素*/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;  /*等价于display:block;*/
+}
+/*清除浮动*/
+.clearfix:after {
+	clear: both;
+}
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#fff;
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-decoration: none;
+	font-weight: normal;
+	/*设置字体属性为默认大小，是相对于浏览器默认字体大小或继承body设定的字体大小来说的*/
+	font-size: 100%;
+}
+
+s,i,em {
+	font-style: normal;
+	text-decoration: none;
+}
+.col-red {
+	color: #C81623!important;
+}
+
+/*公共类*/
+.w {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.al {
+	text-align: left;
+} 
+
+.ac {
+	text-align: center;
+}
+
+.ar {
+	text-align: right;
+}
+
+.hide {
+	display: none;
+}
+/*设置文件编码*/
+@charset "UTF-8";
+
+/*css初始化*/
+html, body, ul, li, ol, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img label{
+	margin: 0;
+	padding: 0;
+}
+
+/*去掉蓝色边框,各个浏览器显示效果不同*/
+fieldset, img, input, button {
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline-style: none;
+}
+a{
+	color:gray;
+}
+ul, ol label{
+	list-style: none;
+}
+ul{
+	font: 12px/20px tahoma,'Microsoft YaHei';
+}
+input {
+	padding-top: 0;
+	padding-bottom: 0;
+	/*simsun字体是一款宋体设计字体*/
+	font-family: tahoma,\5FAE\8F6F\96C5\9ED1;
+}
+
+select, input {
+	vertical-align: middle;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+select, input, textarea {
+	font-size: 12px;
+	margin: 0;
+}
+
+/*防止拖动影响布局*/
+textarea {
+	resize: none;
+}
+
+/*设定表格的细边框样式*/
+table {
+	border-collapse: collapse;
+}
+
+body {
+	/*\5b8b\4f53是宋体两个字的unicode编码;
+	unicode编码可以描述所有国家的字符，以\起始，
+	后面跟4位十六进制数*/
+	font: 12px/1.5 tahoma,'Microsoft YaHei';
+    color: gray;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;/*等价于display:block;*/
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*针对于IE/6/7浏览器的浮动清除*/
+.clearfix {
+	*zoom:1;
+}
+
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-decoration: none;
+	font-weight: normal;
+	/*设置字体属性为默认大小，是相当于浏览器默认字体
+	大小或继承body设定的字体大小来说的*/
+	font-size: 100%;
+}
+
+s, i, em {
+	font-style: normal;
+	text-decoration: none;
+}
+
+/*京东色*/
+.col-red {
+	color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.al {
+	text-align: left;
+}
+
+.ac {
+	text-align: center;
+}
+
+.ar {
+	text-align: right;
+}
+
+.hide {
+	display: none;
+}
+.rel{
+	position:relative;
+}
+a:hover{
+	color: red;
+}
